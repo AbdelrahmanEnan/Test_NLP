@@ -1,8 +1,5 @@
-# Clustering_Test_NLP
-Spooky Author Identification; Testing k-means algorithms against other ML classification algorithms.
-
-
 # Introduction
+## Spooky Author Identification; Testing k-means algorithms against other ML classification algorithms.
 The aim of this paper is to build models that can identify the author of small unknown text (sentence) after converting it to a set of variables (ex. number of words, number of letters, etc…). Some classical algorithms are used like K-NN, Naïve Bayes, and K-means, and their results are compared to results obtained using more advanced methods (machine learning models) like Random Forest, and Support Vector Machine.
 > **Note**
 > 
