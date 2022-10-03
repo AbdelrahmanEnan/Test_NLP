@@ -1,3 +1,19 @@
+# Table of Contents
+1. [Introduction](#Introduction)
+2. [Dataset](#Dataset)
+   - [Data Acquisition](#Data-Acquisition)
+   - [Initial Dataset](#Initial-Dataset)
+   - [Data Pre-processing](#Data-Pre-processing)
+      - [Features Generation and Feature Removal](#Features-Generation-and-Feature-Removal)
+      - [Data Normalization](#Data-Normalization)
+      - [Data Split](#Data-Split)
+   - [Data Description (after pre-processing)](#data-description-after-pre-processing)
+3. [Algorithms](#Algorithms)
+4. [Results](#Results)
+5. [Model Improving (Tuning)](#model-improving-tuning)
+6. [Conclusion](#Conclusion) 
+7. [Further Work](#Further-Work)
+
 # Introduction
 ## Spooky Author Identification; Testing k-means algorithms against other ML classification algorithms.
 The aim of this paper is to build models that can identify the author of small unknown text (sentence) after converting it to a set of variables (ex. number of words, number of letters, etc…). Some classical algorithms are used like K-NN, Naïve Bayes, and K-means, and their results are compared to results obtained using more advanced methods (machine learning models) like Random Forest, and Support Vector Machine.
@@ -33,7 +49,7 @@ Input attribute was processed to extract more meaningful attributes for computer
 When dealing with distance-based methods (ex. K-NN and SVM), or when applying Regulaization it is necessary to normalize data in order to avoid data redundancy or imposing fake weight due to different ranges of data’s variables.
 
 The “Max-min” normalization technique was the chosen method over z-score method in this document.
-### Data split
+### Data Split
 Dataset was split so that 80-20% “Train set”-“Test set”. Split was performed randomly, to ensure that the subsets have the same representation of output classes as the original dataset.
 ## Data Description (after pre-processing)
 - No nulls.
