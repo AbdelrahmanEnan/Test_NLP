@@ -179,7 +179,7 @@ def toFactor(list):
     return vector
 
 import csv
-data = list(csv.reader(open("datasetNorL.csv")))
+data = list(csv.reader(open("../datasetNorL.csv")))
 del data[0]
 split = len(data)*4//5
 trainset = data[:split]
