@@ -181,6 +181,7 @@ def toFactor(list):
 import csv
 data = list(csv.reader(open("datasetNorL.csv")))
 del data[0]
+# There's no point of splitting data into training and testing sets, since K-means is an unsuperviesd model; but it is used to compare the accuracy of the model against othe models results 
 split = len(data)*4//5
 trainset = data[:split]
 testset = data[split:]
