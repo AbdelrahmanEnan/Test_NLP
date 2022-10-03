@@ -39,13 +39,13 @@ The “Max-min” normalization technique was the chosen method over z-score met
 ### Data split
 Dataset was split so that 80-20% “Train set”-“Test set”. Split was performed randomly, to ensure that the subsets have the same representation of output classes as the original dataset.
 ## Data Description (after pre-processing)
-• No nulls.
-• Weak correlation among features and output.
-• Numeric input features.
-• Factor class output.
-• 1138 input attributes.
-• Training set of 15663 observations.
-• Testing set of 3916 observations.
+- No nulls.
+- Weak correlation among features and output.
+- Numeric input features.
+- Factor class output.
+- 1138 input attributes.
+- Training set of 15663 observations.
+- Testing set of 3916 observations.
 # Algorithms
 1. K-NN
 2. Naive Bayes
