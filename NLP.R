@@ -48,7 +48,7 @@ words <- stststs2$word[1:1100]
 #       this number can be change or even to take all words ("words 1-gram")
 
 
-# to visualize most frequent words in dataset
+# to visualize most frequent words in dataset (use one of the following)
 library(wordcloud)
 wordcloud(stststs2$word, stststs2$n, max.words=100, random.order=FALSE, colors = rainbow(30))
 wordcloud(words, scale = c(2, 1), min.freq = 50, colors = rainbow(30))
@@ -73,11 +73,6 @@ dim(dataset)
 #############################################################################################
 #        Data Pre-processing
 #############################################################################################
-
-#write.csv(numData, "numData.csv", row.names = FALSE)
-#write.csv(datasetNor, "datasetNor.csv", row.names = FALSE)
-#write.csv(datasetNorL, "datasetNorL.csv", row.names = FALSE)
-
 # to drop unimportant features ("id", "text")
 numData <- dataset[-c(1,2)]
 # to factor output feature ("author")
@@ -98,7 +93,7 @@ normalize <- function (x){
   }
   return(value)
 }
-testeer <- as.data.frame(numData[,apply(numData, 2, var, na.rm=TRUE) != 0]) # to eliminate attributes with zero variation; (max()==min())
+#testeer <- as.data.frame(numData[,apply(numData, 2, var, na.rm=TRUE) != 0]) # to eliminate attributes with zero variation; (max()==min())
 
 # to normalize data features values
 datasetNor <- as.data.frame(lapply(numData[,],normalize))
@@ -111,6 +106,11 @@ str(datasetNorL)#Check factors
 # to factor output feature
 datasetNorL$author <- factor(datasetNorL$author)
 
+# to save the data for later use; minimize time of running the previous code again                           
+#write.csv(numData, "numData.csv", row.names = FALSE)
+#write.csv(datasetNor, "datasetNor.csv", row.names = FALSE)
+write.csv(datasetNorL, "datasetNorL.csv", row.names = FALSE) #this one is needed to be used in K-means algorithm code
+                             
 # to split data into training and testing subsets
 library(caTools)
 set.seed(123)
