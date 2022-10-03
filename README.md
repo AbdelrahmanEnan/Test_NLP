@@ -91,7 +91,7 @@ The model was tuned by trying different valyes for the following parameters:
 # Conclusion 
 The best model was Support Vector Machine of type “spoc-svc”, kernel “rbfdot”, C-parameter = 5, and sigma-parameter = 0, using 5-folds Cross-validation. And the results were accuracy of 78%.
 
-# Furthr Work
+# Further Work
 Selecting different set of features (word bi-gram for example) need to be investigated as it might result a more accurate models. 
 
 Further tuning is needed for Random Forest and Neural Networks models, since tuning its two parameters (ntree and mtry) may result a better accuracy. 
