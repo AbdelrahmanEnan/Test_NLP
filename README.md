@@ -1,2 +1,2 @@
 # Clustering_Test_NLP
-Testing k-means algorithms against numerical data to predict authors of spooky 
+Spooky Author Identification; Testing k-means algorithms against other ML classification algorithms.
